@@ -21,10 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${PixelOperator.className} antialiased `}>
-        <div className="p-2 flex items-center justify-center">
+      <body className={`${PixelOperator.className} antialiased flex justify-center`}>
+        <div className="p-2 container flex-col max-w-[60rem]">
           <Nav></Nav>
-          <div>{children}</div>
+          <div className=" border-2 border-alexSemiDark p-1 ">
+            <div className="border-2 border-alexSemiDark p-4">
+              {children}
+            </div></div>
         </div>
       </body>
     </html>
